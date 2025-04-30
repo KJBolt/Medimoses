@@ -22,6 +22,7 @@
         'views/product_attribute_type_views.xml',
         'views/product_attribute_views.xml',
         'views/product_views.xml',
+        'views/hide_forestry.xml',
 
         # start rana
         'views/forest_rerverse_views.xml',

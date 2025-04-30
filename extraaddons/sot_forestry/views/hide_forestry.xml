@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="sot_forestry.forestry_menu_root" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+
+        <!-- Hide Discuss Menu -->
+        <record id="mail.menu_root_discuss" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+    </data>
+</odoo>
