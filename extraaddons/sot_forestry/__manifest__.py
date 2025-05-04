@@ -42,7 +42,7 @@
         'views/waybill_views.xml',
         'views/dashboard.xml',
 
-        'views/menus.xml',
+        # 'views/menus.xml',
         'views/login_templates.xml',
         'data/forest_type_data.xml',
         'data/product_attribute_type_data.xml',
