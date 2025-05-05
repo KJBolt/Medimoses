@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="utm.menu_link_tracker_root" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+
+        <record id="account.menu_finance" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+
+        <record id="hr.menu_hr_root" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+
+        <record id="contacts.menu_contacts" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+
+        <menuitem 
+            id="medimoses_contacts" 
+            name="Contacts" 
+            parent="purchase.menu_purchase_root"
+            action="contacts.action_contacts" 
+            sequence="10" 
+        />
+
+
+    </data>
+</odoo>
+
+
+
