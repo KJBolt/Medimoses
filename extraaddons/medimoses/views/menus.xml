@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+
+        <!-- Hide Discuss Menu -->
+        <record id="mail.menu_root_discuss" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+
+        <record id="spreadsheet_dashboard.spreadsheet_dashboard_menu_root" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+
         <record id="utm.menu_link_tracker_root" model="ir.ui.menu">
             <field name="active">False</field>
         </record>
