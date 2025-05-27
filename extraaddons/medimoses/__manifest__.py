@@ -14,12 +14,14 @@
     'data': [
         'views/menus.xml',
         'views/dashboard.xml',
+        'data/bill_of_material.xml',
+        'data/manufacturing_orders.xml',
     ],
     'installable': True,
     'application': True,
     'assets': {
         'web.assets_backend': [
-            'medimoses/static/src/img/js/dashboard.js',
+            'medimoses/static/src/js/dashboard.js',
             'medimoses/static/src/xml/dashboard.xml',
         ],
         'web.assets_frontend': [],

@@ -27,6 +27,11 @@
             <field name="active">False</field>
         </record>
 
+        <!-- Hide Planning Menu Item in Manufacturing -->
+        <record id="mrp.mrp_planning_menu_root" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+
         <menuitem 
             id="medimoses_contacts" 
             name="Contacts" 

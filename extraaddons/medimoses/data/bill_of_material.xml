@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <!-- Inherit Bill of Material form view -->
+        <record id="bill_of_material_view_form_inherit" model="ir.ui.view">
+            <field name="name">bill.of.material.view.form.inherit</field>
+            <field name="model">mrp.bom</field>
+            <field name="inherit_id" ref="mrp.mrp_bom_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//widget[@name='web_ribbon']" position="after">
+                    <!-- Add seperator with a label -->
+                    <separator string="Final Output"/>
+                </xpath>
+
+                <xpath expr="//field[@name='product_tmpl_id']" position="attributes">
+                    <!-- Add new field for final output quantity -->
+                    <attribute name="help">This is the finished product you are building</attribute>
+                </xpath>
+
+                <xpath expr="//field[@name='product_id']" position="attributes">
+                    <!-- Add new field for final output quantity -->
+                    <attribute name="help">If the product has variants (e.g., colors or sizes), you can specify which one this BoM applies to.</attribute>
+                </xpath>
+
+                <xpath expr="//field[@name='product_qty']" position="attributes">
+                    <!-- Add new field for final output quantity -->
+                    <attribute name="help">This is the default number of finished products that will be produced using the specified components</attribute>
+                </xpath>
+
+                <xpath expr="//field[@name='company_id']" position="attributes">
+                    <!-- Add new field for final output quantity -->
+                    <attribute name="help">The company for which this BoM applies</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
